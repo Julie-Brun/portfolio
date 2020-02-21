@@ -9,7 +9,7 @@ class Header extends React.Component {
         return (
             <div id='header'>
                 <Title name='Julie Brun' work='Développeuse Web'/>
-                {/* <Menu/> */}
+                <Menu/>
             </div>
         )
     }

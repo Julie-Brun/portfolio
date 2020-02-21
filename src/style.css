@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
 }
 
 #root {
@@ -11,22 +12,27 @@ body {
     height: 100%;
 }
 
+/* Component Home */
+
 #home {
     width: 100%;
     height: 100%;
     background: url("img/NightSky.png") center no-repeat;
 }
 
+/* Component Header */
+
 #header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding: 30px;
 }
 
+/* Title */
 #header #title {
     font-family: 'Press Start 2P', cursive;
     color: #ffffff;
-    padding: 30px;
 }
 
 #header #title h1 {
@@ -36,3 +42,52 @@ body {
 #header #title h2 {
     font-size: 20px;
 }
+
+/* Menu */
+#header #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#header #menu #menuButton {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#header #menu #menuButton div {
+    width: 37px;
+    height: 10px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+#header #menu #nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #FFFFFF;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+#header #menu #nav li a {
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    color: #FFFFFF;
+    line-height: 5%;
+}
+
