@@ -10,6 +10,11 @@ body {
 #root {
     width: 100%;
     height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Component Home */
@@ -23,10 +28,16 @@ body {
 /* Component Header */
 
 #header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 30px;
+    z-index: 10;
 }
 
 /* Title */
@@ -89,5 +100,19 @@ body {
     font-family: 'Press Start 2P', cursive;
     color: #FFFFFF;
     line-height: 5%;
+}
+
+/* Component Planet */
+
+#planet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 

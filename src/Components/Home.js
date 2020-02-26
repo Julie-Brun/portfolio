@@ -3,7 +3,7 @@ import {withRouter} from 'react-router-dom';
 import '../style.css';
 // import Loading from './Loading';
 import Header from './Header';
-// import Planet from './Planet';
+import Planet from './Planet';
 // import Focus from './Focus';
 
 class Home extends React.Component {
@@ -11,6 +11,7 @@ class Home extends React.Component {
         return (
             <div id='home' >
                 <Header/>
+                <Planet/>
             </div>
         )
     }
